@@ -47,9 +47,3 @@ if not isinstance(settings.media, (GXSerial, GXNet)):
 reader = GXDLMSReader(settings.client, settings.media, settings.trace, settings.invocationCounter)
 
 settings.media.open()
-
-# Вот то, что ниже - нужно завернуть в фикстуру пайтеста
-# Коннект
-# reader.initializeConnection()
-# # Дисконнект
-# reader.close()
